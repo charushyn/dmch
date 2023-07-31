@@ -11,3 +11,8 @@
   font-family: Acrom_regular;
   src: url("./fonts/Acrom-Regular.woff") format("woff")
 }
+
+.bg_main{
+  background: url('/public/main.jpg') 0 no-repeat;
+  background-size: contain;
+}

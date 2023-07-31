@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'main': "url('/main.jpg')",
+        'graphs': "url('/graphs.png')",
       },
       colors: {
         white: '#F5F5F5',
@@ -16,6 +17,7 @@ module.exports = {
         bgblack: '#222221',
         light_gold: '#E5DEBB',
         gray: '#525252',
+        quote: '#B5B5B5',
       },
       fontFamily: {
         Acrom_light: 'Acrom_light',

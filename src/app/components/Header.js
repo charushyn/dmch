@@ -1,8 +1,8 @@
 export default function Header(){
     return(
-        <header class='h-32 font-Acrom_light text-white'>
-            <div class='flex justify-between items-center h-1/2'>
-                <div class='flex gap-4'>
+        <header class='h-32 font-Acrom_light text-white z-20'>
+            <div class='flex justify-between items-center h-1/2 px-20 border-b-2'>
+                <div class='flex gap-8'>
                     <span>cd.consulting.polska</span>
                     <span>+48 730 526 706</span>
                 </div>
@@ -11,6 +11,25 @@ export default function Header(){
                     <svg xmlns="http://www.w3.org/2000/svg" class='w-6 h-6' viewBox="0 0 32 32"> <path d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z"/> </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" class='w-6 h-6' fill="currentColor" viewBox="0 0 16 16"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/> </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" class='w-6 h-6' fill="currentColor" viewBox="0 0 16 16"> <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/> </svg>
+                </div>
+            </div>
+            <div class='flex px-20 h-1/2 items-center justify-between pt-8'>
+                <img src="./logo.svg" class='h-8'></img>
+                <div class='flex gap-16 font-Acrom_regular'>
+                    <span>Why we</span>
+                    <span>Services</span>
+                    <span>Reviews</span>
+                    <span>FAQ</span>
+                </div>
+                <div class='flex'>
+                    <select>
+                        <option>Eng</option>
+                        <option>Ukr</option>
+                        <option>Pol</option>
+                    </select>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
                 </div>
             </div>
         </header>
