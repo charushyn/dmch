@@ -10,6 +10,7 @@ module.exports = {
       backgroundImage: {
         'main': "url('/main.jpg')",
         'graphs': "url('/graphs.png')",
+        'feedback': "url('/feedback.png')",
       },
       colors: {
         white: '#F5F5F5',
