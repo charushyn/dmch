@@ -11,8 +11,22 @@
   font-family: Acrom_regular;
   src: url("./fonts/Acrom-Regular.woff") format("woff")
 }
+@font-face {
+  font-family: Acrom_bold;
+  src: url("./fonts/Acrom-Bold.woff") format("woff")
+}
 
 .bg_main{
   background: url('/public/main.jpg') 0 no-repeat;
   background-size: contain;
+}
+
+.footer_title{
+  font-family: Acrom_light;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: fit-content;
+  opacity: 80%;
+  gap: 5px;
 }

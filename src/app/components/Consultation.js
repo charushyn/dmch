@@ -1,6 +1,6 @@
 export default function Consultation(){
     return(
-        <div class='flex h-screen px-20 font-Acrom_regular gap-20 py-20'>
+        <div class='flex h-[56.25rem] px-20 font-Acrom_regular gap-20 py-20'>
             <div class='py-10'>
                 <div class='text-xs'>THE BEST TEAM</div>
                 <div class='text-3xl my-5'>Why are we Lorem ipsum amet, adipiscing </div>
