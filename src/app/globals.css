@@ -30,3 +30,43 @@
   opacity: 80%;
   gap: 5px;
 }
+
+.pagination_left{
+  display: flex;
+  justify-items: center;
+  position: relative;
+  pointer-events: all;
+  right: 0px;
+  transition: all;
+}
+.pagination_left:hover{
+  right: 2px;
+}
+.pagination_right{
+  display: flex;
+  justify-items: center;
+  position: relative;
+  pointer-events: none;
+  left: 0px;
+  transition: all;
+}
+.pagination_right:hover{
+  left: 2px;
+}
+.pagination_right_span{
+  left: 2px;
+  top: 40%;
+  position: absolute;
+  pointer-events: auto;
+  transition: all;
+}
+.pagination_right_span:hover{
+  left: 6px;
+}
+.type_of_service_option:hover{
+  background: gray;
+  cursor: pointer;
+}
+.type_of_service_option{
+  padding: 5px 0px;
+}

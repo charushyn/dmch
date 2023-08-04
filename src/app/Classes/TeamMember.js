@@ -1,3 +1,5 @@
+'use client'
+
 class TeamMember {
     constructor(name, role, description, photo) {
         this.name = name;
@@ -52,16 +54,15 @@ team.push(new TeamMember(
     './team-t.png'
 ))
 
-const length = Math.ceil(team.length / 3)
+const slicesOfTeam = []
 
-let slicesOfTeam = []
+export const lengthOfSlices = Math.ceil(team.length / 3)
 
-for(let i = 0; i < team.length; i+3){
-    slicesOfTeam.push([
-        team[i] ? team[i] : '-',
-        team[i + 1] ? team[i + 1] : '-',
-        team[i + 2] ? team[i + 2] : '-',
-    ])
+for(let i = 1; i <= lengthOfSlices; i++){
+    slicesOfTeam.push(
+        [team[i * 3 - 3] ? team[i * 3 - 3] : null, team[i * 3 - 2] ? team[i * 3 - 2] : null, team[i * 3 - 1] ? team[i * 3 - 1] : null]
+        )
 }
+
 
 export default slicesOfTeam;
