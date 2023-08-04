@@ -1,3 +1,5 @@
+import slicesOfTeam from "../Classes/TeamMember"
+
 export default function Team(){
     return(
         <div class='h-[65.25rem] bg-light_gold pt-[8rem] font-Acrom_light'>
@@ -14,24 +16,6 @@ export default function Team(){
                     <span class='absolute left-20'>PREV</span>
                 </div>
                 <div class='flex gap-10'>
-                    <div class='flex-col w-[18.75rem]'>
-                        <img src="./team-f.png"></img>
-                        <div class='mt-4 font-Acrom_regular'>Julia Barnes</div>
-                        <div class='text-gray mt-4'>Project Manager</div>
-                        <div class='text-gray mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
-                    </div>
-                    <div class='flex-col w-[18.75rem] relative bottom-12'>
-                        <img src="./team-s.png"></img>
-                        <div class='mt-4 font-Acrom_regular'>Julia Barnes</div>
-                        <div class='text-gray mt-4'>Project Manager</div>
-                        <div class='text-gray mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
-                    </div>
-                    <div class='flex-col w-[18.75rem]'>
-                        <img src="./team-t.png"></img>
-                        <div class='mt-4 font-Acrom_regular'>Julia Barnes</div>
-                        <div class='text-gray mt-4'>Project Manager</div>
-                        <div class='text-gray mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
-                    </div>
                 </div>
                 <div class='flex items-center relative'>
                     <span class='absolute left-2'>NEXT</span>
@@ -43,3 +27,11 @@ export default function Team(){
         </div>
     )
 } 
+
+/*                             <div class='flex-col w-[18.75rem]'>
+                                <img src={array[index -].photo}></img>
+                                <div class='mt-4 font-Acrom_regular'>{member.name}</div>
+                                <div class='text-gray mt-4'>{member.role}</div>
+                                <div class='text-gray mt-4'>{member.description}</div>
+                            </div>
+*/
