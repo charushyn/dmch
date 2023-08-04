@@ -1,3 +1,7 @@
+'use client'
+
+import { Link } from "react-scroll"
+
 export default function Footer(){
     return(
         <footer class='bg-bgblack h-[39.5rem] px-[12rem] pt-[6rem]'>
@@ -28,10 +32,10 @@ export default function Footer(){
                     <span>NIP: 7123437436522410886</span>
                 </div>
             </div>
-            <div class='flex justify-end my-[4rem]'>
+            <Link class='flex justify-end my-[4rem]' to="main" duration={500} smooth={true}>
                 <img src="/button_up.svg"></img>
                 <img src="/button_up_arrow.svg" class='relative right-[1.55rem]'></img>
-            </div>
+            </Link>
             <div class='flex flex-row justify-around'>
                 <div class="footer_title">Design created by @masiuk.design</div>
                 <div class="footer_title">Site created by tg: @qjjwjjejj</div>
