@@ -8,9 +8,7 @@ import * as EmailValidator from 'email-validator';
 export default function Feedback(){
     const [hidden, setHidden] = useState(true)
     const [option, setOption] = useState('')
-    const [isEmailValidate, setIsEmailValidate] = useState(true)
     const [value, setValue] = useState('')
-    const [valueEmail, setValueEmail] = useState(true)
 
     const typesOfService = [
         'Анализ финансовых договоров',
@@ -39,13 +37,19 @@ export default function Feedback(){
                     <input onChange={(e) => {
                         setValueEmail(e.target.getAttribute('value'))
                     }} class='border-b-[0.10rem] w-[26rem] border-opacity-20 border-gray'></input>
-                    <div class='mb-5 mt-10'>Phone Number</div>
-                    <PhoneInput
-                        value={value}
-                        onChange={() => setValue(value)}
-                        inputStyle={{width: '26rem'}}
-                        regions={'europe'}
-                    ></PhoneInput>
+                    <div class='border-b-[0.10rem] border-gray border-opacity-20 cursor-pointer'>
+                        <PhoneInput
+                            value={value}
+                            onChange={() => setValue(value)}
+                            inputStyle={{width: '26rem', padding: '10px 0 0 0'}}
+                            preferredCountries={['pl', 'ua']}
+                            containerStyle={{margin: '10px 0'}}
+                            regions={'europe'}
+                            placeholder="Enter Phone Number"
+                            disableSearchIcon={true}
+                            prefix="+"
+                        ></PhoneInput>
+                    </div>
                     <div class={`mt-10 flex justify-between w-[26rem] border-opacity-20 ${option === '' ? 'border-b-[0.10rem] border-gray pb-12 cursor-pointer' : ''}`} onClick={() => setHidden(!hidden)}>
                         <span>Type of service</span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
