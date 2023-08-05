@@ -13,6 +13,11 @@ export default function OurServices(){
     const [show6, setShow6] = useState(false)
     const [show7, setShow7] = useState(false)
     const [show8, setShow8] = useState(false)
+    
+    const properties = [show0, show1, show2, show3, show4, show5, show6, show7, show8]
+    const showedBlocks = []
+
+    console.log(showedBlocks)
 
     return(
         <div class='font-Acrom_light mt-5 h-min-[56.5rem]'>
@@ -25,7 +30,20 @@ export default function OurServices(){
                 {services.map((service) => {
                     return(
                         <li>
-                            <div class='border-b-2 border-light_gold border-opacity-50 w-[56rem] h-[4rem] flex justify-between items-center group cursor-pointer'>
+                            <div id={service.id} onClick={
+                                function a(){
+                                    if(showedBlocks.findIndex((item) => item === `show${service.id}`) !== -1){
+                                        showedBlocks.filter((item) => {
+                                            if(item === `show${service.id}`){
+                                                return false
+                                            } else return true
+                                        })
+                                    } else {
+                                        showedBlocks.push(`show${service.id}`)
+                                    }
+                                    console.log(showedBlocks)
+                                }
+                                } class='border-b-2 border-light_gold border-opacity-50 w-[56rem] h-[4rem] flex justify-between items-center group cursor-pointer'>
                                 <div class='flex w-fit gap-2'>
                                     <img src={service.iconUrl} class='h-8 w-8 pointer-events-auto'></img>
                                     <span class='inline-block'>{service.showText}</span>
