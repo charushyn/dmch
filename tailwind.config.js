@@ -26,6 +26,9 @@ module.exports = {
         Acrom_light: 'Acrom_light',
         Acrom_regular: 'Acrom_regular',
         Acrom_bold: 'Acrom_bold'
+      },
+      transitionProperty: {
+        'height': 'height'
       }
     },
   },

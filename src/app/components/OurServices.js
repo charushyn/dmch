@@ -1,24 +1,9 @@
 'use client'
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import services from "../Classes/Service"
 
 export default function OurServices(){
-    const [show0, setShow0] = useState(false)
-    const [show1, setShow1] = useState(false)
-    const [show2, setShow2] = useState(false)
-    const [show3, setShow3] = useState(false)
-    const [show4, setShow4] = useState(false)
-    const [show5, setShow5] = useState(false)
-    const [show6, setShow6] = useState(false)
-    const [show7, setShow7] = useState(false)
-    const [show8, setShow8] = useState(false)
-    
-    const properties = [show0, show1, show2, show3, show4, show5, show6, show7, show8]
-    const showedBlocks = []
-
-    console.log(showedBlocks)
-
     return(
         <div class='font-Acrom_light mt-5 h-min-[56.5rem]'>
             <div>
@@ -28,34 +13,34 @@ export default function OurServices(){
             </div>
             <ul class='flex-col mt-10 w-fit mx-auto'>
                 {services.map((service) => {
+                    const [hidden, setHidden] = useState(true)
                     return(
                         <li>
-                            <div id={service.id} onClick={
-                                function a(){
-                                    if(showedBlocks.findIndex((item) => item === `show${service.id}`) !== -1){
-                                        showedBlocks.filter((item) => {
-                                            if(item === `show${service.id}`){
-                                                return false
-                                            } else return true
-                                        })
-                                    } else {
-                                        showedBlocks.push(`show${service.id}`)
-                                    }
-                                    console.log(showedBlocks)
-                                }
-                                } class='border-b-2 border-light_gold border-opacity-50 w-[56rem] h-[4rem] flex justify-between items-center group cursor-pointer'>
+                            <div onClick={() => {
+                                setHidden(!hidden)
+                                }} id={service.id} class={`border-b-2 border-light_gold border-opacity-50 w-[56rem] h-[4rem] flex justify-between items-center group cursor-pointe ${hidden ? '' : 'border-b-0'}`}>
                                 <div class='flex w-fit gap-2'>
                                     <img src={service.iconUrl} class='h-8 w-8 pointer-events-auto'></img>
                                     <span class='inline-block'>{service.showText}</span>
                                 </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 duration-300 group-hover:rotate-90">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class={`w-6 h-6 duration-300 group-hover:rotate-90 ${hidden ? '' : 'rotate-180'}`}>
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                                 </svg>
                             </div>
-                            <div>
-                                <img src={service.detailPhoto}></img>
-                                <div>A</div>
-                            </div>
+                            {hidden ? '' :
+                                <div class={`my-4 flex border-b-2 border-light_gold border-opacity-50 pb-8`}>
+                                    <img src={service.detailPhoto}></img>
+                                    <div class='max-w-[25rem] mx-auto flex flex-col justify-between'>
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                        <div class='text-gold bg-bgblack w-[17.5rem] h-[4rem] flex justify-between px-6 items-center mt-16 cursor-pointer hover:bg-gold hover:text-bgblack duration-300 self-end'>
+                                            <span>Хочу консультацию</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.8" stroke="currentColor" class=" w-12 h-12">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                </div>
+                            }
                         </li>
                     )
                 })}
