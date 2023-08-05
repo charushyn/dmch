@@ -18,7 +18,7 @@ export default function OurServices(){
                         <li>
                             <div onClick={() => {
                                 setHidden(!hidden)
-                                }} id={service.id} class={`border-b-2 border-light_gold border-opacity-50 w-[56rem] h-[4rem] flex justify-between items-center group cursor-pointe ${hidden ? '' : 'border-b-0'}`}>
+                                }} id={service.id} class={`border-b-2 border-light_gold border-opacity-50 w-[56rem] h-[4rem] flex justify-between items-center group cursor-pointe ${hidden ? '' : 'border-none'}`}>
                                 <div class='flex w-fit gap-2'>
                                     <img src={service.iconUrl} class='h-8 w-8 pointer-events-auto'></img>
                                     <span class='inline-block'>{service.showText}</span>

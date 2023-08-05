@@ -19,7 +19,7 @@ export default function Faq(){
                         <li>
                             <div onClick={() => {
                                 setHidden(!hidden)
-                                }} class={`border-b-2 border-light_gold border-opacity-50 w-[56rem] h-[4rem] flex justify-between items-center group cursor-pointe ${hidden ? '' : 'border-b-0'}`}>
+                                }} class={`border-b-2 border-light_gold border-opacity-50 w-[56rem] h-[4rem] flex justify-between items-center group cursor-pointe ${hidden ? '' : 'border-none'}`}>
                                 <div class='flex w-fit gap-2'>
                                     <span class='inline-block'>{option.titleText}</span>
                                 </div>
