@@ -1,17 +1,17 @@
 
 'use client'
 
-import Main from './components/Main'
-import Consultation from './components/Consultation'
-import Graphs from './components/Graphs'
-import OurServices from './components/OurServices'
-import Cooperation from './components/Cooperation'
-import Faq from './components/FAQ'
-import Team from './components/Team'
-import Feedback from './components/Feedback'
-import Footer from './components/Footer'
-import ModalThanks from './components/ModalThanks'
-import ModalForm from './components/ModalForm'
+import Main from './UI/components/Main'
+import Consultation from './UI/components/Consultation'
+import Graphs from './UI/components/Graphs'
+import OurServices from './UI/components/OurServices'
+import Cooperation from './UI/components/Cooperation'
+import Faq from './UI/components/FAQ'
+import Team from './UI/components/Team'
+import Feedback from './UI/components/Feedback'
+import Footer from './UI/components/Footer'
+import ModalThanks from './UI/components/ModalThanks'
+import ModalForm from './UI/components/ModalForm'
 import { useState } from 'react'
 
 

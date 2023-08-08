@@ -1,7 +1,7 @@
 'use client'
 
 import { useSelector, useDispatch } from "react-redux"
-import { option } from "../GlobalRedux/Features/optionReducer"
+import { option } from "../../GlobalRedux/Features/optionReducer"
 import { useState } from "react"
 
 export default function Options(props){

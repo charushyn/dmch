@@ -2,7 +2,7 @@
 'use client'
 
 import { useSelector, useDispatch } from "react-redux"
-import { rus, eng, ukr } from "../GlobalRedux/Features/langReducer"
+import { rus, eng, ukr } from "../../GlobalRedux/Features/langReducer"
 import { useState } from "react"
 
 export default function SwitchLang(){

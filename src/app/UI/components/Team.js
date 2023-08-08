@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from "react"
-import slicesOfTeam from "../Classes/TeamMember"
-import { lengthOfSlices } from "../Classes/TeamMember"
+import slicesOfTeam from "../../Classes/TeamMember"
+import { lengthOfSlices } from "../../Classes/TeamMember"
 
 export default function Team(){
     const [index, setIndex] = useState(0)
