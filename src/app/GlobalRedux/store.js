@@ -2,9 +2,11 @@
 
 import { configureStore } from "@reduxjs/toolkit"
 import langReducer from './Features/langReducer'
+import optionReducer from "./Features/optionReducer"
 
 export const store = configureStore({
     reducer: {
-        lang: langReducer
+        lang: langReducer,
+        option: optionReducer,
     }
 })
