@@ -1,4 +1,5 @@
 import SwitchLang from "./SwitchLang"
+import { Link } from "react-scroll"
 
 export default function Header(props){
     return(
@@ -20,10 +21,10 @@ export default function Header(props){
             <div class='flex px-20 h-1/2 items-center justify-between pt-8'>
                 <img src="./logo.svg" class='h-8'></img>
                 <div class='flex gap-16 font-Acrom_regular'>
-                    <span>Why we</span>
-                    <span>Services</span>
-                    <span>Reviews</span>
-                    <span>FAQ</span>
+                    <Link class='cursor-pointer' to="whyWe" duration={500} smooth={true}>Why we</Link>
+                    <Link class='cursor-pointer' to="services" duration={500} smooth={true}>Services</Link>
+                    <Link class='cursor-pointer' to="reviews" duration={500} smooth={true}>Reviews</Link>
+                    <Link class='cursor-pointer' to="faq" duration={500} smooth={true}>FAQ</Link>
                 </div>
                 <div class='flex'>
                     <></>

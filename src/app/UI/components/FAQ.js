@@ -6,7 +6,7 @@ import { useState } from "react"
 
 export default function Faq(){
     return(
-        <div class='font-Acrom_light mt-5 h-[56.25rem]'>
+        <div class='font-Acrom_light mt-5 h-[56.25rem]' id='faq'>
         <div>
             <div class='text-center text-xs mb-4'>THE BEST TEAM</div>
             <div class='text-center text-4xl font-Acrom_regular mb-4'>FAQ Lorem ipsum dolor sit amet</div>

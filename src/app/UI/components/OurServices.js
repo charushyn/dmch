@@ -5,7 +5,7 @@ import services from "../../Classes/Service"
 
 export default function OurServices(){
     return(
-        <div class='font-Acrom_light mt-5 h-min-[56.5rem]'>
+        <div class='font-Acrom_light mt-5 h-min-[56.5rem]' id="services">
             <div>
                 <div class='text-center text-xs mb-4'>THE BEST TEAM</div>
                 <div class='text-center text-3xl font-Acrom_regular mb-4'>Our Services</div>
