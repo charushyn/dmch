@@ -13,6 +13,8 @@ module.exports = {
         'main-3': "url('/bg-3.png')",
         'graphs': "url('/graphs.png')",
         'feedback': "url('/feedback.png')",
+        'whyWe': "url('/whyWe.png')",
+        'friends': "url('/friends.png')",
       },
       colors: {
         white: '#F5F5F5',
@@ -45,6 +47,7 @@ module.exports = {
       // => @media (max-width: 767px) { ... }
 
       'sm': {'max': '639px'},
+      'navbar': {'min': '768px', 'max': '10000px'}
       // => @media (max-width: 639px) { ... }
     }
   },

@@ -1,6 +1,6 @@
 export default function Consultation(props){
     return(
-        <div class='flex h-[56.25rem] px-20 font-Acrom_regular gap-20 py-20' id="whyWe">
+        <div class='flex md:flex-col-reverse h-[56.25rem] md:h-fit px-20 font-Acrom_regular gap-20 py-20' id="whyWe">
             <div class='py-10'>
                 <div class='text-xs'>THE BEST TEAM</div>
                 <div class='text-3xl my-5'>Why are we Lorem ipsum amet, adipiscing </div>
@@ -42,7 +42,9 @@ export default function Consultation(props){
                     </svg> 
                 </div>
             </div>
-            <img src="./whyWe.png" class='w-1/2 h-full'></img>
+            <div class='bg-whyWe w-1/2 h-full md:mt-[1rem] md:w-full md:h-[20rem] bg-cover bg-center'>
+
+            </div>
         </div>
     )
 }

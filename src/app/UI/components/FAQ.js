@@ -12,14 +12,14 @@ export default function Faq(){
             <div class='text-center text-4xl font-Acrom_regular mb-4'>FAQ Lorem ipsum dolor sit amet</div>
             <div class='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
         </div>
-        <ul class='flex-col mt-10 w-fit mx-auto font-Acrom_regular'>
+        <ul class='flex flex-col mt-10 w-full'>
         {FAQoptions.map((option) => {
                     const [hidden, setHidden] = useState(true)
                     return(
                         <li>
                             <div onClick={() => {
                                 setHidden(!hidden)
-                                }} class={`border-b-2 border-light_gold border-opacity-50 w-[56rem] h-[4rem] flex justify-between items-center group cursor-pointe ${hidden ? '' : 'border-none'}`}>
+                                }} class={`border-b-2 border-light_gold border-opacity-50 mx-10 h-[4rem] flex justify-between items-center group cursor-pointe ${hidden ? '' : 'border-none'}`}>
                                 <div class='flex w-fit gap-2'>
                                     <span class='inline-block'>{option.titleText}</span>
                                 </div>
@@ -28,14 +28,16 @@ export default function Faq(){
                                 </svg>
                             </div>
                             {hidden ? '' :
-                                <div class={`my-4 flex border-b-2 border-light_gold border-opacity-50 pb-8`}>
-                                    <div class='flex flex-row justify-between w-full'>
-                                        <span class='max-w-[25rem] opacity-60'>{option.detailText}</span>
-                                        <div class='text-gold bg-bgblack w-[17.5rem] h-[4rem] flex justify-between px-6 items-center mt-16 cursor-pointer hover:bg-gold hover:text-bgblack duration-300 self-end'>
-                                            <span>Хочу консультацию</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.8" stroke="currentColor" class=" w-12 h-12">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                <div class={`my-4 flex border-b-2 border-light_gold border-opacity-50 pb-8 w-fit mx-10`}>
+                                    <div class='mx-auto flex justify-between'>
+                                        <div class='flex flex-col justify-between'>
+                                            <span class=''>{option.detailText}</span>
+                                            <div class='text-gold bg-bgblack w-[17.5rem] h-[4rem] flex justify-between px-6 items-center mt-16 cursor-pointer hover:bg-gold hover:text-bgblack duration-300 self-end'>
+                                                <span>Хочу консультацию</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.8" stroke="currentColor" class=" w-12 h-12">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                                             </svg> 
+                                        </div>
                                         </div>
                                     </div>
                                 </div>

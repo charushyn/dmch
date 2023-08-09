@@ -63,6 +63,16 @@ for(let i = 1; i <= lengthOfSlices; i++){
         [team[i * 3 - 3] ? team[i * 3 - 3] : null, team[i * 3 - 2] ? team[i * 3 - 2] : null, team[i * 3 - 1] ? team[i * 3 - 1] : null]
         )
 }
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+}
+
+export const exportedTeam = team;
+
+export const indexShowForMd = getRandomInt(0, team.length - 1);
 
 
 export default slicesOfTeam;
+

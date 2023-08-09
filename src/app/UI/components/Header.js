@@ -3,7 +3,7 @@ import { Link } from "react-scroll"
 
 export default function Header(props){
     return(
-        <header class={`${props.color ? 'text-black' : 'text-white'} h-32 font-Acrom_light z-20`}>
+        <header class={`${props.color ? 'text-black' : 'text-white'} h-32 font-Acrom_light z-20 md:hidden`}>
             <div class='flex justify-between items-center h-1/2 px-20 border-b-2'>
                 <div class='flex gap-8'>
                     <span>cd.consulting.polska</span>
