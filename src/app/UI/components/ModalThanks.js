@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ModalThanks(props){
     return(
         <div onClick={props.onClose} class={`${props.isOpen ? 'fixed' : 'hidden'} w-full h-full bg-black bg-opacity-30 z-20 font-Acrom_light`}>
-            <div onClick={(e) => e.stopPropagation()} class='flex bg-light_gold w-fit relative top-[5rem] left-[15rem]' >
+            <div onClick={(e) => e.stopPropagation()} class='flex bg-light_gold w-fit relative top-[5rem] left-[15rem] lg:left-[2rem] lg:top-[2rem]' >
                 <img src='./ModalThanks.png'></img>
                 <div class='flex-col w-[30.5rem] px-20 relative'>
                         <div onClick={props.onClose} class='flex justify-end cursor-pointer'>

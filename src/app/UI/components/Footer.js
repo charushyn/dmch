@@ -4,7 +4,7 @@ import { Link } from "react-scroll"
 
 export default function Footer(){
     return(
-        <footer class='bg-bgblack h-[39.5rem] px-[12rem] pt-[6rem]'>
+        <footer class='bg-bgblack h-[39.5rem] px-[4rem] pt-[6rem]'>
             <img src="./logo.svg" class='mb-[3.5rem]'></img>
             <div class='flex flex-row justify-between'>
                 <div className="footer_title">
@@ -26,7 +26,7 @@ export default function Footer(){
                     <span>Facebook</span>
                     <span>Youtube</span>
                 </div>
-                <div className="footer_title">
+                <div className="footer_title lg:max-w-[10rem]">
                     <span class='font-Acrom_regular opacity-100 text-xl mb-[2rem]'>Адрес</span>
                     <span>ul. Obrońców Pokoju 2A/11620-030 Lublin</span>
                     <span>NIP: 7123437436522410886</span>

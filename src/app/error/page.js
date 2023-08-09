@@ -1,3 +1,5 @@
+'use client'
+
 import Header from "../UI/components/Header";
 import Link from "next/link";
 import Footer from "../UI/components/Footer";
@@ -6,10 +8,10 @@ export default function Page(){
     return(
     <div class='bg-light_gold'>
         <Header color='black'></Header>
-        <div class='flex'>
-            <img src='./Calculator.png'></img>
+        <div class='flex justify-between mb-[2rem]'>
+            <img src='./Calculator.png' class='w-1/2'></img>
             <div class='flex-col w-[30.5rem] px-20 relative'>
-                        <div class='text-xs mt-[7rem]'>THE BEST TEAM</div>
+                        <div class='text-xs mt-[7rem] lg:mt-[3rem]'>THE BEST TEAM</div>
                         <div class='text-3xl my-5 font-Acrom_regular'>Thanks for the application</div>
                         <div class='mb-5'>Our team will contact you as soon as possible</div>
                         <Link href={'/'} class='text-gold bg-bgblack w-[17.5rem] h-[4rem] flex justify-between px-6 items-center mt-16 cursor-pointer hover:bg-gold hover:text-bgblack duration-300'>

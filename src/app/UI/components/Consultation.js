@@ -42,7 +42,7 @@ export default function Consultation(props){
                     </svg> 
                 </div>
             </div>
-            <img src="./whyWe.png"></img>
+            <img src="./whyWe.png" class='w-1/2 h-full'></img>
         </div>
     )
 }

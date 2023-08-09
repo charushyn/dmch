@@ -20,7 +20,7 @@ export default function Header(props){
             </div>
             <div class='flex px-20 h-1/2 items-center justify-between pt-8'>
                 <img src="./logo.svg" class='h-8'></img>
-                <div class='flex gap-16 font-Acrom_regular'>
+                <div class='flex gap-16 font-Acrom_regular lg:gap-8'>
                     <Link class='cursor-pointer' to="whyWe" duration={500} smooth={true}>Why we</Link>
                     <Link class='cursor-pointer' to="services" duration={500} smooth={true}>Services</Link>
                     <Link class='cursor-pointer' to="reviews" duration={500} smooth={true}>Reviews</Link>

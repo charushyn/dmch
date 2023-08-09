@@ -10,7 +10,7 @@ import ImageSlider from "./ImageSlider"
 export default function ImageSlider({slides}){
     const [count, setCount] = useState(0)
     return(
-    <div style={{backgroundImage: `url(${slides[count].url})`}} class={`flex-col relative h-[51.25rem] duration-1000 w-full ease-in transition-{background-image} bg-cover`} id="main">
+    <div style={{backgroundImage: `url(${slides[count].url})`}} class={`flex-col relative h-[51.25rem] duration-1000 w-full ease-out transition-{background-image} bg-cover`} id="main">
             <Header></Header>
             <Slider count={count} funcChange={setCount}></Slider>
             <div class='flex justify-between mt-[3.5rem]'>

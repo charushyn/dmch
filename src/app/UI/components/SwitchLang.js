@@ -14,7 +14,7 @@ export default function SwitchLang(){
     const [show, useShow] = useState('no')
 
     return(
-        <div class={show === 'yes' ? 'bg-bgblack flex' : 'bg-none flex'} onClick={() => {
+        <div class={show === 'yes' ? 'bg-bgblack flex text-white' : 'bg-none flex'} onClick={() => {
             show === 'no' ? useShow('yes') : useShow('no')
         }}>
         <div class='flex flex-col w-[4rem] font-Acrom_light relative'>

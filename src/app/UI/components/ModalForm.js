@@ -27,8 +27,8 @@ export default function ModalForm(props){
         <div onClick={props.onClose} class={`${props.isOpen ? 'fixed' : 'hidden'} w-full h-full z-20 font-Acrom_light`}>
             <div onClick={(e) => e.stopPropagation()} class='flex bg-white w-fit relative' >
                 <div class='font-Acrom_regular flex'>
-                    <div class={'h-[59.5rem] w-[50rem] bg-feedback relative bg-cover bg-center'}>
-                        <div class=' text-white px-20 items-center justify-center pt-[23rem]'>
+                    <div class={'h-[59.5rem] w-[50rem] bg-feedback relative bg-cover bg-center lg:w-1/2'}>
+                        <div class=' text-white px-20 items-center justify-center pt-[23rem] lg:pt-[14rem]'>
                             <div class='text-xs opacity-70'>THE BEST TEAM</div>
                             <div class='text-3xl my-5'>Why are we Lorem ipsum amet, adipiscing </div>
                             <div class='mb-5 opacity-70'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet</div>
@@ -68,7 +68,7 @@ export default function ModalForm(props){
                             <div onClick={() => {
                                 props.onClose()
                                 props.onSuccess()
-                                }} class='text-gold bg-bgblack w-[17.5rem] h-[4rem] flex justify-between px-6 items-center mt-16 cursor-pointer hover:bg-gold hover:text-bgblack duration-300'>
+                                }} class='text-gold lg:mb-6 lg:mt-8 bg-bgblack w-[17.5rem] h-[4rem] flex justify-between px-6 items-center mt-16 cursor-pointer hover:bg-gold hover:text-bgblack duration-300'>
                                     <span>Отправить</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.8" stroke="currentColor" class="w-12 h-12">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />

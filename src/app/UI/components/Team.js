@@ -30,10 +30,10 @@ export default function Team(){
                     </svg>
                     <span class='absolute left-20 pointer-events-none hover:left-24 transition-all'>PREV</span>
                 </div>
-                <div class='flex gap-10'>
+                <div class='flex justify-around px-8 lg:px-0'>
                     {slicesOfTeam[index].map((member) => {
                                                         return(
-                                                            <div class='flex-col w-[18.75rem]'>
+                                                            <div class='flex-col w-1/4'>
                                                                 <img src={member ? member.photo : ''}></img>
                                                                 <div class='mt-4 font-Acrom_regular'>{member ? member.name : ''}</div>
                                                                 <div class='text-gray mt-4'>{member ? member.role : ''}</div>
