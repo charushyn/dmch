@@ -24,8 +24,8 @@ export default function Feedback(props){
         'Недвижимость'
     ]
     return(
-        <div class='font-Acrom_regular flex'>
-            <div class={'min-h-[59.5rem] bg-feedback w-1/2 relative bg-cover bg-center'}>
+        <div class='font-Acrom_regular flex md:flex-col'>
+            <div class={'min-h-[59.5rem] bg-feedback w-1/2 relative bg-cover bg-center md:w-screen md:min-h-[32rem]'}>
                 <div class=' text-white px-20 items-center justify-center absolute top-1/3'>
                     <div class='text-xs'>THE BEST TEAM</div>
                     <div class='text-3xl my-5'>Why are we Lorem ipsum amet, adipiscing </div>

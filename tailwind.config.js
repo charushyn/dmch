@@ -15,6 +15,7 @@ module.exports = {
         'feedback': "url('/feedback.png')",
         'whyWe': "url('/whyWe.png')",
         'friends': "url('/friends.png')",
+        'ModalThanks': "url('/ModalThanks.png')",
       },
       colors: {
         white: '#F5F5F5',

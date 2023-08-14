@@ -6,7 +6,7 @@ import { useState } from "react"
 
 export default function Faq(){
     return(
-        <div class='font-Acrom_light mt-5 h-[56.25rem]' id='faq'>
+        <div class='font-Acrom_light my-5 h-fit' id='faq'>
         <div>
             <div class='text-center text-xs mb-4'>THE BEST TEAM</div>
             <div class='text-center text-4xl font-Acrom_regular mb-4'>FAQ Lorem ipsum dolor sit amet</div>
@@ -16,10 +16,10 @@ export default function Faq(){
         {FAQoptions.map((option) => {
                     const [hidden, setHidden] = useState(true)
                     return(
-                        <li>
+                        <li class='mx-[2rem]'>
                             <div onClick={() => {
                                 setHidden(!hidden)
-                                }} class={`border-b-2 border-light_gold border-opacity-50 mx-10 h-[4rem] flex justify-between items-center group cursor-pointe ${hidden ? '' : 'border-none'}`}>
+                                }} class={`border-b-2 border-light_gold border-opacity-50 h-[4rem] flex justify-between items-center group cursor-pointe ${hidden ? '' : 'border-none'}`}>
                                 <div class='flex w-fit gap-2'>
                                     <span class='inline-block'>{option.titleText}</span>
                                 </div>
@@ -28,7 +28,7 @@ export default function Faq(){
                                 </svg>
                             </div>
                             {hidden ? '' :
-                                <div class={`my-4 flex border-b-2 border-light_gold border-opacity-50 pb-8 w-fit mx-10`}>
+                                <div class={`my-4 flex border-b-2 border-light_gold border-opacity-50 pb-8 w-full`}>
                                     <div class='mx-auto flex justify-between'>
                                         <div class='flex flex-col justify-between'>
                                             <span class=''>{option.detailText}</span>

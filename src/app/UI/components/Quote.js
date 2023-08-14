@@ -1,6 +1,6 @@
 export default function Quote(){
     return(
-        <div class='w-[36rem] h-[14rem] bg-bgblack font-Acrom_light flex-col px-14 py-10 md:w-full md:mt-8 md:text-right'>
+        <div class='w-[36rem] min-h-[14rem] bg-bgblack font-Acrom_light flex-col px-14 py-10 md:w-full md:mt-8 md:text-right'>
             <span class='text-quote flex justify-end'><span>РОБЕРТ КИЙОСАКИ</span></span>
             <span class='text-white inline-block mt-3'>«Важно не то, сколько денег вы зарабатываете, а то, сколько денег у вас остается, как они работают на вас, и сколько поколений вы сможете ими обеспечить» </span>
             <div class='text-gold flex gap-3 relative justify-end mt-4 pointer-events-auto cursor-pointer hover:gap-1 duration-300'>

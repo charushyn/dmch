@@ -24,17 +24,17 @@ export default function ModalForm(props){
             'Недвижимость'
         ]
         return(
-        <div onClick={props.onClose} class={`${props.isOpen ? 'fixed' : 'hidden'} w-full h-full z-20 font-Acrom_light`}>
+        <div onClick={props.onClose} class={`${props.isOpen ? 'fixed flex' : 'hidden'} w-screen h-screen items-center justify-center z-20 font-Acrom_light`}>
             <div onClick={(e) => e.stopPropagation()} class='flex bg-white w-fit relative' >
                 <div class='font-Acrom_regular flex'>
                     <div class={'h-[59.5rem] w-[50rem] bg-feedback relative bg-cover bg-center lg:w-1/2'}>
-                        <div class=' text-white px-20 items-center justify-center pt-[23rem] lg:pt-[14rem]'>
+                        <div class=' text-white px-20 ml-[2rem] pt-[23rem] lg:pt-[14rem]'>
                             <div class='text-xs opacity-70'>THE BEST TEAM</div>
                             <div class='text-3xl my-5'>Why are we Lorem ipsum amet, adipiscing </div>
                             <div class='mb-5 opacity-70'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet</div>
                         </div>
                     </div>
-                    <div class='flex w-[50rem] mt-0 pl-20'>
+                    <div class='flex w-[50rem] mt-10 pl-20'>
                         <form class=''>
                             <div class='mb-5 mt-10'>Name</div>
                             <input class='border-b-[0.10rem] w-[26rem] border-opacity-20 border-gray bg-white'></input>

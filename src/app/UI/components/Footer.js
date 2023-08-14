@@ -4,9 +4,9 @@ import { Link } from "react-scroll"
 
 export default function Footer(){
     return(
-        <footer class='bg-bgblack h-[39.5rem] px-[4rem] pt-[6rem]'>
+        <footer class='bg-bgblack min-h-[39.5rem] px-[4rem] pt-[6rem]'>
             <img src="./logo.svg" class='mb-[3.5rem]'></img>
-            <div class='flex flex-row justify-between'>
+            <div class='flex flex-row justify-between flex-wrap gap-y-10 gap-x-5'>
                 <div className="footer_title">
                     <span class='font-Acrom_regular opacity-100 text-xl mb-[2rem]'>Про нас</span>
                     <span>Отзывы</span>
