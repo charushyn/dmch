@@ -4,7 +4,7 @@ import { Link } from "react-scroll"
 
 export default function Footer(){
     return(
-        <footer class='bg-bgblack min-h-[39.5rem] px-[4rem] pt-[6rem]'>
+        <footer class='bg-bgblack min-h-[39.5rem] px-[4rem] pt-[6rem] mob:pb-10'>
             <img src="./logo.svg" class='mb-[3.5rem]'></img>
             <div class='flex flex-row justify-between flex-wrap gap-y-10 gap-x-5'>
                 <div className="footer_title">
@@ -36,7 +36,7 @@ export default function Footer(){
                 <img src="/button_up.svg"></img>
                 <img src="/button_up_arrow.svg" class='relative right-[1.55rem]'></img>
             </Link>
-            <div class='flex flex-row justify-around'>
+            <div class='flex flex-row justify-around mob:flex-col mob:gap-y-5'>
                 <div class="footer_title">Design created by @masiuk.design</div>
                 <div class="footer_title">Site created by tg: @qjjwjjejj</div>
             </div>

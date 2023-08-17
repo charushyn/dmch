@@ -1,4 +1,4 @@
-import SwitchLang from "./SwitchLang"
+import SwitchLang from "./components/SwitchLang"
 import { Link } from "react-scroll"
 
 export default function Header(props){

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import services from "../../Classes/Service"
+import Button from "../Button"
 
 export default function OurServices(){
     return(
@@ -33,12 +34,7 @@ export default function OurServices(){
                                         <img src={service.detailPhoto} class='inline-block w-[25rem] md:w-full md:h-[10rem] md:object-cover md:object-center'></img>
                                         <div class='flex flex-col justify-between'>
                                             <span class=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                                            <div class='text-gold bg-bgblack w-[17.5rem] h-[4rem] flex justify-between px-6 items-center mt-16 cursor-pointer hover:bg-gold hover:text-bgblack duration-300 self-end'>
-                                                <span>Хочу консультацию</span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.8" stroke="currentColor" class=" w-12 h-12">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                                            </svg> 
-                                        </div>
+                                            <Button includedText={'Хочу консультацию'}></Button>
                                         </div>
                                     </div>
                                 </div>

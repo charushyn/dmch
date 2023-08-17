@@ -48,6 +48,7 @@ module.exports = {
       // => @media (max-width: 767px) { ... }
 
       'sm': {'max': '639px'},
+      'mob': {'max': '375px'},
       'navbar': {'min': '768px', 'max': '10000px'}
       // => @media (max-width: 639px) { ... }
     }

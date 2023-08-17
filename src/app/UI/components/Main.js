@@ -1,6 +1,6 @@
 'use client'
 
-import Header from "./Header"
+import Header from "../Header"
 import Slider from "./Slider"
 import Quote from "./Quote"
 import CountSlide from "./CountSlide"

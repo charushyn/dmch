@@ -1,8 +1,8 @@
 'use client'
 
-import Header from "../UI/Header"
-import Footer from "../UI/Footer"
-import Link from "next/link"
+import Header from "../UI/Headerr
+import Link from "next/link";
+import Footer from "../UI/Footerr
 
 export default function Page(){
     return(

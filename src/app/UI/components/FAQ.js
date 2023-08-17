@@ -1,6 +1,7 @@
 'use client'
 
 import FAQoptions from "../../Classes/FAQOptions"
+import Button from "../Button"
 
 import { useState } from "react"
 
@@ -19,7 +20,7 @@ export default function Faq(){
                         <li class='mx-[2rem]'>
                             <div onClick={() => {
                                 setHidden(!hidden)
-                                }} class={`border-b-2 border-light_gold border-opacity-50 h-[4rem] flex justify-between items-center group cursor-pointe ${hidden ? '' : 'border-none'}`}>
+                                }} class={`border-b-2 border-light_gold border-opacity-50 h-[4rem] mob:h-fit mob:my-2 mob:pb-3 flex justify-between items-center group cursor-pointe ${hidden ? '' : 'border-none'}`}>
                                 <div class='flex w-fit gap-2'>
                                     <span class='inline-block'>{option.titleText}</span>
                                 </div>
@@ -32,12 +33,7 @@ export default function Faq(){
                                     <div class='mx-auto flex justify-between'>
                                         <div class='flex flex-col justify-between'>
                                             <span class=''>{option.detailText}</span>
-                                            <div class='text-gold bg-bgblack w-[17.5rem] h-[4rem] flex justify-between px-6 items-center mt-16 cursor-pointer hover:bg-gold hover:text-bgblack duration-300 self-end'>
-                                                <span>Хочу консультацию</span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.8" stroke="currentColor" class=" w-12 h-12">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                                            </svg> 
-                                        </div>
+                                            <Button includedText={'Хочу консультацию'}></Button>
                                         </div>
                                     </div>
                                 </div>
