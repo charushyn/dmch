@@ -1,21 +1,20 @@
-
 'use client'
 
-import Main from './UI/components/Main'
-import Consultation from './UI/components/Consultation'
-import Graphs from './UI/components/Graphs'
-import OurServices from './UI/components/OurServices'
-import Cooperation from './UI/components/Cooperation'
-import Faq from './UI/components/FAQ'
-import Team from './UI/components/Team'
-import Feedback from './UI/components/Feedback'
-import Footer from './UI/Footer'
-import ModalThanks from './UI/components/ModalThanks'
-import ModalForm from './UI/components/ModalForm'
+import Main from '../UI-ru/components/Main'
+import Consultation from '../UI-ru/components/Consultation'
+import Graphs from '../UI-ru/components/Graphs'
+import OurServices from '../UI-ru/components/OurServices'
+import Cooperation from '../UI-ru/components/Cooperation'
+import Faq from '../UI-ru/components/FAQ'
+import Team from '../UI-ru/components/Team'
+import Feedback from '../UI-ru/components/Feedback'
+import Footer from '../UI-ru/Footer'
+import ModalThanks from '../UI-ru/components/ModalThanks'
+import ModalForm from '../UI-ru/components/ModalForm'
 import { useState } from 'react'
 
 
-export default function App() {
+export default function Page() {
   const [isModalThanksOpen, setIsModalThanksOpen] = useState(false)
   const [isModalFormOpen, setIsModalFormOpen] = useState(false)
   return (
