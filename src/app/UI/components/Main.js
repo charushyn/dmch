@@ -8,14 +8,14 @@ import { useState } from "react"
 import ImageSlider from "./ImageSlider"
 
 
-export default function Main(){
+export default function Main(props){
     const slides = [
         {url: "./bg-1.png"},
         {url: "./bg-2.png"},
         {url: "./bg-3.png"},
     ]
     return(
-        <ImageSlider slides={slides}>
+        <ImageSlider toConsultation={() => props.toConsultation()} slides={slides}>
         </ImageSlider>
     )
 }

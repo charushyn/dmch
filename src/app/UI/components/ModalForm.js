@@ -35,8 +35,15 @@ export default function ModalForm(props){
                             <div class='mb-5 opacity-70'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet</div>
                         </div>
                     </div>
-                    <div class='flex w-[50rem] mt-10 pl-20'>
-                        <form class=''>
+                    <div class='w-[50rem] pt-[5rem] px-[10rem] flex flex-col'>
+                        <div class='flex justify-end'>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8" onClick={() => props.onClose()}>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </div>
+
+                        
+                        {/* <form class=''>
                             <div class='mb-5 mt-10'>Name</div>
                             <input class='border-b-[0.10rem] w-[26rem] border-opacity-20 border-gray bg-white'></input>
                             <div class='mb-5 mt-10'>Email</div>
@@ -70,7 +77,8 @@ export default function ModalForm(props){
                                 props.onClose()
                                 props.onSuccess()
                                 }}></Button>
-                        </form>
+                        </form> */}
+                                            <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/ckmDbD3TdKxdg4dQ5dBJE79cnAhJpUSmemufLzjbttUAIAJ1Li2GUhQDguL6jpAWXN"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
                     </div>
                 </div>
             </div>

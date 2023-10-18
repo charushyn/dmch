@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import services from "../../Classes/Service"
 import Button from "../Button"
 
-export default function OurServices(){
+export default function OurServices(props){
     return(
         <div class='font-Acrom_light my-5 h-min-fit' id="services">
             <div>
@@ -32,7 +32,7 @@ export default function OurServices(){
                                 <div class={`my-4 flex border-b-2 border-light_gold border-opacity-50 pb-8 w-full`}>
                                     <div class='mx-auto flex justify-between gap-5'>
                                         <img src={service.detailPhoto} class='inline-block w-[25rem] md:w-full md:h-[10rem] md:object-cover md:object-center'></img>
-                                        <div class='flex flex-col justify-between'>
+                                        <div class='flex flex-col justify-between' onClick={() => props.toConsultation()}>
                                             <span class=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                             <Button includedText={'Хочу консультацию'}></Button>
                                         </div>

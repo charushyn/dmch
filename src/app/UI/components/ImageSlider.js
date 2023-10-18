@@ -8,24 +8,17 @@ import { useState } from "react"
 import ImageSlider from "./ImageSlider"
 import Navbar from "./Navbar"
 
-export default function ImageSlider({slides}){
+export default function ImageSlider(props){
     const [count, setCount] = useState(0)
 
-    function up(){
-        count === 2 ? setCount(0) : setCount(count + 1)
-    }
-    function down(){
-        count === 0 ? setCount(2) : setCount(count - 1)
-    }
-
     return(
-    <div style={{backgroundImage: `url(${slides[count].url})`}} class={`flex-col relative h-[51.25rem] duration-1000 w-full ease-out transition-{background-image} bg-cover bg-center`} id="main">
+    <div style={{backgroundImage: `url(${props.slides[count].url})`}} class={`flex-col relative h-[51.25rem] duration-1000 w-full ease-out transition-{background-image} bg-cover bg-center`} id="main">
             <Navbar></Navbar>
             <Header></Header>
             <Slider count={count} funcChange={setCount}></Slider>
             <div class='flex justify-between mt-[3.5rem] md:flex-col'>
                 <CountSlide count={count + 1}></CountSlide>
-                <Quote></Quote>
+                <Quote toConsultation={() => props.toConsultation()}></Quote>
             </div>
     </div>
     )

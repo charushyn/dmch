@@ -33,8 +33,8 @@ export default function Feedback(props){
                     <div class='mb-5 opacity-70'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet</div>
                 </div>
             </div>
-            <div class='flex mx-auto mt-0'>
-                <form class='w-[23rem]'>
+            <div class='mx-auto mt-[6rem]'>
+                {/* <form class='w-[23rem]'>
                     <div class='mb-5 mt-10'>Name</div>
                     <input class='border-b-[0.10rem] w-[23rem] border-opacity-20 border-gray'></input>
                     <div class='mb-5 mt-10'>Email</div>
@@ -65,7 +65,8 @@ export default function Feedback(props){
                     <div class='mb-10 mt-10'>Message</div>
                     <input class='border-b-[0.10rem] w-[23rem] border-opacity-20 border-gray'></input>
                         <Button includedText={'Отправить'} differentStyles={hidden ? 'mt-16 mob:mb-4' : 'mt-6 mob:mb-4'}></Button>
-                    </form>
+                    </form> */}
+                    <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/ckmDbD3TdKxdg4dQ5dBJE79cnAhJpUSmemufLzjbttUAIAJ1Li2GUhQDguL6jpAWXN"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
             </div>
         </div>
     )

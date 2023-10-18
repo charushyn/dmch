@@ -20,14 +20,13 @@ export default function App() {
   const [isModalFormOpen, setIsModalFormOpen] = useState(false)
   return (
     <div>
-      <ModalForm isOpen={isModalFormOpen} onClose={() => setIsModalFormOpen(false)} onSuccess={() => setIsModalThanksOpen(true)}></ModalForm>
-      <ModalThanks isOpen={isModalThanksOpen} onClose={() => setIsModalThanksOpen(false)}></ModalThanks>
-      <Main></Main>
+      <ModalForm isOpen={isModalFormOpen} onClose={() => setIsModalFormOpen(false)} onSuccess={() => setIsModalFormOpen(true)}></ModalForm>
+      <Main toConsultation={() => setIsModalFormOpen(true)}></Main>
       <Consultation toConsultation={() => setIsModalFormOpen(true)}></Consultation>
       <Graphs></Graphs>
-      <OurServices></OurServices>
-      <Cooperation onSuccess={() => setIsModalThanksOpen(true)}></Cooperation>
-      <Faq></Faq>
+      <OurServices toConsultation={() => setIsModalFormOpen(true)}></OurServices>
+      <Cooperation onSuccess={() => setIsModalFormOpen(true)}></Cooperation>
+      <Faq toConsultation={() => setIsModalFormOpen(true)}></Faq>
       <Team></Team>
       <Feedback></Feedback>
       <Footer></Footer>

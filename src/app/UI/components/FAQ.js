@@ -5,7 +5,7 @@ import Button from "../Button"
 
 import { useState } from "react"
 
-export default function Faq(){
+export default function Faq(props){
     return(
         <div class='font-Acrom_light my-5 h-fit' id='faq'>
         <div>
@@ -31,7 +31,7 @@ export default function Faq(){
                             {hidden ? '' :
                                 <div class={`my-4 flex border-b-2 border-light_gold border-opacity-50 pb-8 w-full`}>
                                     <div class='mx-auto flex justify-between'>
-                                        <div class='flex flex-col justify-between'>
+                                        <div class='flex flex-col justify-between' onClick={() => props.toConsultation()}>
                                             <span class=''>{option.detailText}</span>
                                             <Button includedText={'Хочу консультацию'}></Button>
                                         </div>
